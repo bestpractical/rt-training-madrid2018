@@ -1,0 +1,8 @@
+
+@ScripActions = (
+
+    {  Name        => 'Note Transaction',    # loc
+       Description => 'Add a note to this transaction' ,      # loc
+       ExecModule => 'TransactionNote',
+       Argument   => 'Notes' },
+);
