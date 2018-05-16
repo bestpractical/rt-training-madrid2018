@@ -1,0 +1,11 @@
+<p>Support rules!</p>
+
+<%args>
+$Transaction
+</%args>
+<%init>
+my $ticket = $Transaction->TicketObj;
+
+return unless $ticket->QueueObj->Name() eq 'Support';
+
+</%init>
