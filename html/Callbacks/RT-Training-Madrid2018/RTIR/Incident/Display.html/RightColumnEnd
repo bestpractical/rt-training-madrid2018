@@ -1,0 +1,8 @@
+<&| /Widgets/TitleBox, title => loc('People'),
+        ($Ticket->CurrentUserHasRight('ModifyTicket') ? (title_href => RT::IR->HREFTo("Edit.html?id=". $Ticket->Id)  ) : ()),
+        class => 'ticket-info-people',
+    &><& /RTIR/Elements/ShowPeople, Ticket => $Ticket &></&>
+
+<%args>
+$Ticket
+</%args>
