@@ -1,0 +1,21 @@
+<%init>
+
+# Quick test to make sure the callback is in the correct place
+# and is being run.
+warn "XXXXXX I'm in Before Update";
+
+# Added so we don't block updates permanently
+return;
+
+# Put logic here that you want to check, like input validation.
+# If something failes, use the values below to show the user a message
+# and stop the update.
+
+push @$results, "I'm in ur computer again";
+$$skip_update = 1;
+
+</%init>
+<%args>
+$skip_update
+$results
+</%args>
